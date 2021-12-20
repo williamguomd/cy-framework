@@ -1,0 +1,5 @@
+{
+    "testFiles": "**/*.feature",
+    "baseUrl": "http://localhost:8090",
+    "chromeWebSecurity": false
+}
