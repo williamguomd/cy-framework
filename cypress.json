@@ -1,5 +1,8 @@
 {
     "testFiles": "**/*.feature",
     "baseUrl": "http://localhost:8090",
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "env": {
+        "iframe_max_wait_miseconds": 10000
+    }
 }

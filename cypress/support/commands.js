@@ -28,7 +28,7 @@ import '@testing-library/cypress/add-commands'
 import cypress from 'cypress'
 
 cypress.Commands.add('getIframe', (frame_locator) => {
-    return cy.get(frame_locator, {timeout: 10000})
+    return cy.get(frame_locator, {timeout: Cypress.env('iframe_max_wait_miseconds')})
         .its('0.contentDocument.body')
         .should('not.be.empty')
         .then(cy.wrap);
