@@ -1,5 +1,5 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import { HomePage } from "../../../src/pages/camps/homepage";
+import HomePage from "../../../src/pages/camps/homepage";
 
 
 let homepage = new HomePage();
