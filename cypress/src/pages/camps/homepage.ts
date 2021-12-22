@@ -1,6 +1,6 @@
 import BasePage from "../BasePage";
 
-export default class HomePage extends BasePage {
+class HomePage extends BasePage {
     readonly LOCATOR = {
         USER_NAME: 'Username',
         PASSWORD: 'Password',
@@ -18,3 +18,5 @@ export default class HomePage extends BasePage {
             .click();
     }
 }
+
+export default new HomePage()

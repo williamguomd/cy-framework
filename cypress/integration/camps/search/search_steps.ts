@@ -2,13 +2,11 @@ import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import HomePage from "../../../src/pages/camps/homepage";
 
 
-let homepage = new HomePage();
-
 Given('the user has login to the homepage', () => {
     cy.get('credential').then((value: any) => {
         cy.login(value.QA.username, Buffer.from(value.QA.password, 'base64').toString('binary'));
     })
-    homepage.click_submit();
+    HomePage.click_submit();
 })
 
 When('the user click Canada then Ontario as location', (city, specific_city) => {
